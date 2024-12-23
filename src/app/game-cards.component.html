@@ -1,0 +1,47 @@
+<ion-content class="ion-padding">
+  <div class="card-game">
+    <div class="game-title">
+      <h1 class="card-title">{{ gameTitle }}</h1>
+    </div>
+    <div class="card-container">
+    <!-- Display the selected game's card image -->
+    <img
+      *ngIf="cardImage"
+      [src]="cardImage"
+      alt="Game Card"
+      class="card-image"
+    />
+
+    <!-- Display the dynamic card text -->
+    <p
+  class="card-text"
+  [ngStyle]="{ 'font-size.px': fontSize }"
+>
+  {{ cards[currentCardIndex] }}
+</p>
+  </div>
+    <div class="actions">
+      <!-- Previous Button -->
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="previousCard()"
+        [disabled]="currentCardIndex === 0"
+        class="prev-btn"
+      >
+        Previous
+      </ion-button>
+
+      <!-- Next Button -->
+      <ion-button
+        expand="block"
+        color="primary"
+        (click)="nextCard()"
+        [disabled]="currentCardIndex === cards.length - 1"
+        class="next-btn"
+      >
+        Next
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

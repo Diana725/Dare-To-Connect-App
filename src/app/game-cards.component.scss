@@ -1,0 +1,70 @@
+.card-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    // width: 100%;
+  }
+  .card-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px; 
+    margin: 0 auto;  
+    text-align: center;
+  }
+  .card-image {
+    width: 400px;
+    height: 300px;
+    object-fit: contain; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    position: absolute;
+    top: 50%;  
+    left: 55%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(34, 31, 31); 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+    text-align: center;
+    padding: 0 10px; 
+    word-wrap: break-word;
+    max-height: 80%;
+  }
+  .card-title{
+    color: #000000 !important;
+    margin-top: 0;
+  }
+  .next-btn{
+    width: 100px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 1rem; 
+  
+    ion-button {
+      flex: 1; 
+      max-width: 150px; 
+      height: 50px; 
+      font-size: 0.8rem; 
+    }
+  
+    @media (max-width: 768px) {
+      ion-button {
+        max-width: 120px; 
+        height: 45px; 
+      }
+    }
+  }
+  
+  

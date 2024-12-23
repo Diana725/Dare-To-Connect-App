@@ -1,0 +1,14 @@
+<ion-content class="banner">
+  <ion-toolbar>
+    <ion-title>Choose a Game</ion-title>
+  </ion-toolbar>
+</ion-content>
+
+<ion-content class="ion-padding">
+  <div class="game-grid">
+    <div class="game-box" *ngFor="let game of games" (click)="goToGame(game.id)">
+      <img [src]="game.image" alt="{{ game.name }}" class="game-image" />
+      <h3 class="game-title">{{ game.name }}</h3>
+    </div>
+  </div>
+</ion-content>

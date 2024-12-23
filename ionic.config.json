@@ -1,0 +1,7 @@
+{
+  "name": "dare-to-connect-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

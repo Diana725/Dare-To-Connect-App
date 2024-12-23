@@ -1,0 +1,36 @@
+.game-details {
+    text-align: center;
+  
+    .game-image {
+      width: 80%;
+      max-width: 300px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  
+    .game-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #666;
+    }
+  
+    .game-description {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+  
+    .actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 10%;
+      gap: 0.5rem;
+  
+      ion-button {
+        flex: 1;
+      }
+    }
+  }
+  

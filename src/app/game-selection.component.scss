@@ -1,0 +1,48 @@
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 16px; /* Space between boxes */
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .game-box {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .game-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #333;
+  }
+  .banner {
+    --ion-toolbar-background: #FFFFFF !important;
+    --ion-toolbar-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    max-height: 40px;
+  }
+
+  .game-title{
+    font-size: 12px;
+  }
